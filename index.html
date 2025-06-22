@@ -1,46 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio de Ashly huamani</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1 style="color: darkmagenta; text-align: center;font-family: Gabriola;"><i>ASHLY KATLIN HUAMANI ATIQUIPA</i></h1>
-<h2 style="font-family: Gabriola;color: darkviolet;"><i>MI DESCRIPCIÓN</i></h2>
-<p style= "font-family: Gabriola;"><i>Soy una chica tranquila o tambien como le disen 
-    extrovertida, pero solamente es cuando recien comienzo a conocer personas.
-    Soy una chica alegre, divertida, amistosa, comprencible, amable tambien algo renegona.
-  </i></p> 
-  <h4 style= "font-family: Gabriola;color: darkviolet;"><i>HOBBIES</i></h4>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ashly Katlin </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <ul style="font-family: Gabriola;">
-    <li>dibujar </li>
-    <li>tocar flauta dulce </li>
-    <li>danzar </li>
-</ul>  
-<h4 style="font-family: Gabriola;color: darkviolet;"><i>PASATIEMPOS</i></h4>
+    <main>
+        <!-- Inicio -->
+        <section id="inicio" class="section-inicio">
+            <img src="./assets/conejo.jpg" alt="Foto de perfil" class="foto-perfil" />
+            <h1> Ashly Katlin Huamani Atiquipa</h1>
+            <p class="descripcion-corta">Apasionada por la tecnología del diseño y la educación digital.</p>
+            <div class="contact-bar">
+                <a href="#contactos" class="btn-contactame">Contáctame</a>
+            </div>
+        </section>
 
-  <ul style="font-family: Gabriola;">
-    <li>ver peliculas</li>
-    <li>salir a pasear</li>
-  </ul>
-<h4 style="font-family: Gabriola;color: darkviolet;">ACTIVIDADES FAVORITAS</h4>
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="section-sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy una estudiante de APSTI IV y me gusta la edición de videos , el diseño de paginas web 
+            </p>
 
-  <ul style="font-family: Gabriola;">
-    <li>ver peliculas</li>
-    <li>tocar la flauta dulce </li>
-  </ul>
+            <div class="habilidades-container">
+                <div class="cuadro-habilidad">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Programación en JavaScript</li>
+                        <li>Diseño web con HTML y CSS</li>
+                        <li>Gestión de proyectos tecnológicos</li>
+                        <li>Uso de herramientas digitales</li>
+                    </ul>
+                </div>
+                <div class="cuadro-habilidad">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <label>HTML</label>
+                        <div class="skill-bar">
+                            <div class="skill-level html"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <label>CSS</label>
+                        <div class="skill-bar">
+                            <div class="skill-level css"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <label>JavaScript</label>
+                        <div class="skill-bar">
+                            <div class="skill-level js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section>
-  <img src="./assets/th.jpg" alt="flauta dulce">
-  <hr>
-  <h2>fotos</h2>
-  <a href="./contacto.html">contacto</a>
-  </section>
+        <!-- Proyectos -->
+        <section id="proyectos" class="section-proyectos">
+          <div class="proyecto-header">
+            <h2>Mis Proyectos</h2>
+          </div>
+          <div class="proyecto-container">
+            <div class="proyecto">
+              <h3>Desarrollo de plataforma educativa</h3>
+              <p>Para alfabetización digital.</p>
+            </div>
+            <div class="proyecto">
+              <h3>Implementación de talleres</h3>
+              <p>De tecnología en comunidades rurales.</p>
+            </div>
+            <div class="proyecto">
+              <h3>Creación de materiales didácticos</h3>
+              <p>Digitales interactivos.</p>
+            </div>
+          </div>
+        </section>
+        <!-- Contactos -->
+        <section id="contactos" class="section-contactos">
+          <h2>Contactos</h2>
+          <ul class="contact-list">
+            <li><a href="https://wa.me/1234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@ashly.huamani.ati/video/7472114265369890053?is_from_webapp=1&sender_device=pc&web_id=7498747522094319109" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://www.facebook.com/usuario" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/ashly-huamani-atiquipa-84b810337/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </section>
+    </main>
 
-  <a href="https://tiktok.com">tiktok</a>
-  <a href="https://wa.me/+5929753419">whastapp</a>
-  
+    <footer>
+        <p>&copy; 2025 Ashly Katlin. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

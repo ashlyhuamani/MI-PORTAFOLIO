@@ -1,0 +1,277 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #fc94fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #e590f6;
+    color: rgb(255, 253, 253);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #f6f6f6;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color:#e590f6;
+}
+
+/* Sección Inicio */
+.section-inicio {
+    text-align: center;
+    padding: 40px 20px 60px 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.section-inicio h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.descripcion-corta {
+    font-size: 1.1em;
+    color: #e590f6;
+    margin-bottom: 20px;
+}
+
+.contact-bar {
+    margin-top: 20px;
+}
+
+.btn-contactame {
+    background-color:#e590f6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contactame:hover {
+    background-color: #e590f6;
+}
+
+/* Sobre mí */
+.section-sobre-mi {
+    background-color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-sobre-mi h2 {
+    margin-bottom: 15px;
+    color: #e590f6;
+}
+
+.habilidades-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cuadro-habilidad {
+    background-color: #e590f6;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.cuadro-habilidad h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.cuadro-habilidad ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Niveles para soft skills */
+.skill-level.html {
+    width: 90%;
+    background-color: #700d84;
+}
+
+.skill-level.css {
+    width: 85%;
+    background-color: #a61ec1;
+}
+
+.skill-level.js {
+    width: 75%;
+    background-color: #d17cf0;
+}
+
+/* Proyectos */
+.section-proyectos {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.proyecto-header {
+  display: flex;
+  justify-content: center; /* Centra el título horizontalmente */
+  margin-bottom: 20px; /* Espacio entre el título y los cuadrados */
+}
+
+.proyecto-header h2 {
+  color: #d17cf0;
+}
+
+.proyecto-container {
+  display: flex;
+  justify-content: space-around; /* Distribuye los cuadrados con espacio entre ellos */
+}
+
+.proyecto {
+  width: 30%;
+  min-height: 150px;
+  background-color: #d17cf0;
+  margin: 10px;
+  border: 1px solid #d17cf0;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.proyecto h3 {
+  margin-bottom: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .proyecto-container {
+    flex-direction: column; /* Apila los proyectos verticalmente en móviles */
+  }
+  .proyecto {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Contactos */
+.section-contactos {
+  margin-top: 30px; /* Espacio entre la sección anterior y contactos */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #333;
+}
+/* Footer */
+footer {
+    text-align: center;
+    color: #777;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .habilidades-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
