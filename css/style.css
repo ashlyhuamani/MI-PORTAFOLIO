@@ -270,6 +270,18 @@ video:hover {
   text-align: center;
 }
 
+.JavaScript {
+  width: 30%;
+  min-height: 150px;
+  background-color: #d17cf0;
+  margin: 10px;
+  border: 1px solid #d17cf0;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
